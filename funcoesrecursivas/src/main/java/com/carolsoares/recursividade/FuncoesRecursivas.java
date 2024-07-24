@@ -20,7 +20,6 @@ public class FuncoesRecursivas {
         // encontrar a sequência de Fibonacci de um número
         Fibonacci numFibonacci = new Fibonacci();
         String resultadoFibonacci= numFibonacci.mostrarSequenciaFibonacci(10);
-//        String resultadoFibonacci = numFibonacci.mostrarSequenciaFibonacciIt(10);
         System.out.println(resultadoFibonacci);
         
     }
