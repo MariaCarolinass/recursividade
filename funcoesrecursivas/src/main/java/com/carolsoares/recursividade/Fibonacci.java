@@ -18,7 +18,8 @@ public class Fibonacci {
             return numSequencia;
         } return escreverSequencia(numSequencia - 1) + escreverSequencia(numSequencia - 2);
     } 
-    
+
+    // função sem usar recursividade
     public String mostrarSequenciaFibonacciIt(int finalSequencia) {
         int inicioSequencia = 1;
         int proximoSequencia = 1;
