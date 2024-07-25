@@ -1,5 +1,8 @@
 package com.carolsoares.recursividade;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  *
  * @author soarescarol
@@ -26,6 +29,12 @@ public class FuncoesRecursivas {
         Hanoi hanoi = new Hanoi();
         int movimentos = hanoi.mostrarMovimentosTorreHanoi(3, "A", "B", "C");
         System.out.println("Total de movimentos: " + movimentos);
+    
+        // somar números da lista
+        SomaLista soma = new SomaLista();
+        List<Integer> numerosList = Arrays.asList(1, 2, 2, 4, 8, 5);
+        int resultadoSoma = soma.soma_recursiva(numerosList);
+        System.out.println(resultadoSoma);
     }
     
 }
