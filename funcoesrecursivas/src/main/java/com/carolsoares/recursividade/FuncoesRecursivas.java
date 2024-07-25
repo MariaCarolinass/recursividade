@@ -22,9 +22,10 @@ public class FuncoesRecursivas {
         String resultadoFibonacci= numFibonacci.mostrarSequenciaFibonacci(10);
         System.out.println(resultadoFibonacci);
         
-        // mostrar movimentos da Torre de Hannoi
-        Hannoi hannoi = new Hannoi();
-        int movimentos = hannoi.mostrarMovimentosTorreHannoi(3, "A", "B", "C");
+        // mostrar movimentos da Torre de Hanoi
+        Hanoi hanoi = new Hanoi();
+        int movimentos = hanoi.mostrarMovimentosTorreHanoi(3, "A", "B", "C");
         System.out.println("Total de movimentos: " + movimentos);
     }
+    
 }
