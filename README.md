@@ -4,7 +4,7 @@ Este repositório possui alguns exercícios a respeito das funções recursivas,
 
 # Funções recursivas
 
-## O que é recursividade e suas vantagens?
+## O que é recursividade e qual a sua vantagenm?
 
 A recursividade é um conceito na programação para quando chamamos uma função e dentro dela chamamos ela novamente, isso significa uma função recursiva.
 
