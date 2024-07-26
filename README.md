@@ -4,7 +4,7 @@ Este repositório possui alguns exercícios a respeito das funções recursivas,
 
 # Funções recursivas
 
-## O que é recursividade?
+## O que é recursividade e suas vantagens?
 
 A recursividade é um conceito na programação para quando chamamos uma função e dentro dela chamamos ela novamente, isso significa uma função recursiva.
 
@@ -41,3 +41,9 @@ Depois, as funções são desempilhadas e resolvidas na ordem inversa, começand
                 fatorial(4) = 4 * fatorial(3) = 4 * 6 = 24 --> Fim do desempilhamento
 
 Ao concluir o desempilhamento, temos como resultado que 4! é igual a 24.
+
+## Desvantagens da recursividade
+
+As funções recursivas devem ser utilizadas quando necessário, embora muito úteis, precisamos nos atendar a questões do desempenho do nosso software. É muito comum criar funções recursivas que estouram a pilha de execução, isso é, funções chamadas tantas vezes que estouram o limite de tempo que deveriam ter sido resolvidas. Quando criamos um loop que irá chamar a função dentro da função, estamos criando uma pilha de execução que ficará armazenando na memória as variáveis locais. Essa abordagem pode exigir muita memória do programa, afetando o seu desempenho e otimização. Além disso, as funções recursivas podem demorar mais tempo para serem finalizadas do que as funções interativas com estruturas de repetição. 
+
+As pilhas de execução possuem um limite de tempo que podem ocasionar erros, pois a pilha não pode ser executada infinitamente, por isso, precisamos pensar bem na implementação das funções recursivas e definir o seu caso base da função. Toda função recursiva pode ser escrita utilizando estruturas de repetição, podemos escrever o passo a passo que a pilha de execução faz, só que utilizando um for ou while. Com isso, avalie qual a melhor forma de resolver o problema.
