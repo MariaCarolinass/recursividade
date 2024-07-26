@@ -8,7 +8,12 @@ Este repositório possui alguns exercícios a respeito das funções recursivas,
 
 A recursividade é um conceito na programação para quando chamamos uma função e dentro dela chamamos ela novamente, isso significa uma função recursiva.
 
-Uma função recursiva é uma maneira de criar um loop que ficará entrando na própria função diversas vezes até que uma condição seja satisfeita, retornando algo. Essa abordagem facilita e simplifica a resolução de alguns exercícios, pois as funções recursivas resolvem problemas que seriam mais complicados de solucionar com estruturas de repetição, dependendo da complexidade do problema, além de serem escritas com menos linhas.
+Vamos entender as funções recursivas como caixas, a primeira função representa a caixa maior, dentro dessa caixa temos várias outras caixas menores, uma dentro da outra, que são as próximas funções a serem chamadas. As caixas mostram o princípio de recursividade que, ao abrir a caixa maior, vermos outras menores até chegarmos na menor caixa possível. Dessa forma, é isso que as funções recursivas mostram, elas entram nelas mesmas a cada execução, fazendo com que elas se reduzam até o momento que atenda uma determinada condição da função com o menor resultado possível.
+
+![caixas](https://github.com/user-attachments/assets/2d01e536-e560-4167-8837-6ec8bb7cefa7)
+
+Uma função recursiva é uma maneira de criar um loop que ficará entrando na própria função diversas vezes até que uma condição seja satisfeita ao retornar algo. Essa abordagem facilita e simplifica a resolução de alguns exercícios, pois as funções 
+recursivas resolvem problemas que seriam mais complicados de solucionar com estruturas de repetição, dependendo da complexidade do problema, além de serem escritas com menos linhas.
 
 ## Exemplo básico de recursividade
 
