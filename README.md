@@ -31,12 +31,13 @@ Agora, vamos entender como escrever um algorítimo que calcule um número fatori
 
 1) Pilha de chamadas de função
 
-Primeiro, as funções são chamadas e empilhadas até que o caso base seja atendido.
+Vamos resolver o fatorial de 5, tendo como base o algoritmo visto acima. Primeiro, as funções são chamadas e empilhadas até que o caso base seja atendido.
 
-    fatorial(4 - 1) retorne fatorial(3)         
-        fatorial(3 - 1) retorne fatorial(2)               
-            fatorial(2 - 1) retorne fatorial(1) 
-                fatorial(1) = 1 (caso base) --> Fim da pilha
+    fatorial(5 - 1) retorne fatorial(4)
+        fatorial(4 - 1) retorne fatorial(3)
+            fatorial(3 - 1) retorne fatorial(2)               
+                fatorial(2 - 1) retorne fatorial(1) 
+                    fatorial(1) = 1 (caso base) --> Fim da pilha
 
 2) Retorno das chamadas
 
@@ -45,9 +46,14 @@ Depois, as funções são desempilhadas e resolvidas na ordem inversa, começand
     fatorial(1) = 1
         fatorial(2) = 2 * fatorial(1) = 2 * 1 = 2          
             fatorial(3) = 3 * fatorial(2) = 3 * 2 = 6
-                fatorial(4) = 4 * fatorial(3) = 4 * 6 = 24 --> Fim do desempilhamento
+                fatorial(4) = 4 * fatorial(3) = 4 * 6 = 24 
+                    fatorial(5) = 5 * fatorial(4) = 5 * 24 = 120 --> Fim do desempilhamento
 
-Ao concluir o desempilhamento, temos como resultado que 4! é igual a 24.
+Ao concluir o desempilhamento, temos como resultado que 5! é igual a 120.
+
+De forma visual, podemos lembrar da analogia das caixas com a recursividade e aplicar aos fatoriais.
+
+![caixas_fatorial](https://github.com/user-attachments/assets/d510c224-b798-434c-9d0f-6e828d586160)
 
 ## Desvantagens da recursividade
 
