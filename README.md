@@ -12,10 +12,32 @@ Uma função recursiva é uma maneira de criar um loop que ficará entrando na p
 
 ## Exemplo básico de recursividade
 
-O cálculo de um número fatorial é um exemplo comum para estudar as funções recursivas. No exemplo abaixo, a função fatorial e chamada dentro dela mesmo até que o n (número fatorial) seja igual a 1, enquanto a condição não é satisfeita retorne o fatorial com (n-1) vezes o n. Em algum momento o n será igual a 1, pois estamos decrementando ele quando chamamos na função novamente e passamos (n-1). Então quando a condição for atendida teremos o resultado do fatorial.
+O cálculo de um número fatorial é um exemplo comum para estudar as funções recursivas. No exemplo abaixo, a função fatorial e chamada dentro dela mesmo até que o n (número fatorial) seja igual a 1, essa condição é chamada de caso base, enquanto a condição base não é satisfeita retorne a função fatorial de n vezes o (n-1). Em algum momento o n será igual a 1, pois estamos decrementando ele quando chamamos na função novamente e passamos (n-1). Então quando a condição for atendida teremos o resultado do fatorial.
 
     função fatorial(n)
     início 
         se n <= 1 então retorne 1
-        senão retorne fatorial(n-1) * n
+        senão retorne n * fatorial(n-1)
     fim.
+
+## Como o algoritmo da função recursiva funciona?
+
+1) Pilha de chamadas de função
+
+Primeiro, as funções são chamadas e empilhadas até que o caso base seja atendido.
+
+    fatorial(4 - 1) retorne fatorial(3)         
+        fatorial(3 - 1) retorne fatorial(2)               
+            fatorial(2 - 1) retorne fatorial(1) 
+                fatorial(1) = 1 (caso base) --> Fim da pilha
+
+2) Retorno das chamadas
+
+Depois, as funções são desempilhadas e resolvidas na ordem inversa, começando do caso base e voltando para a primeira chamada, isso porque as funções voltam a ser executadas de onde a pilha parou.
+
+    fatorial(1) = 1
+        fatorial(2) = 2 * fatorial(1) = 2 * 1 = 2          
+            fatorial(3) = 3 * fatorial(2) = 3 * 2 = 6
+                fatorial(4) = 4 * fatorial(3) = 4 * 6 = 24 --> Fim do desempilhamento
+
+Ao concluir o desempilhamento, temos como resultado que 4! é igual a 24.
