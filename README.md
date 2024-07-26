@@ -55,6 +55,14 @@ De forma visual, podemos lembrar da analogia das caixas com a recursividade e ap
 
 ![caixas_fatorial](https://github.com/user-attachments/assets/d510c224-b798-434c-9d0f-6e828d586160)
 
+## Exemplo da função fatorial criada em Java
+
+    public int calcularFatorial(int num) {
+        if (num <= 1) {
+            return 1;
+        } return num * calcularFatorial(num - 1); 
+    }
+
 ## Desvantagens da recursividade
 
 As funções recursivas devem ser utilizadas quando necessário, embora muito úteis, precisamos nos atendar a questões do desempenho do nosso software. É muito comum criar funções recursivas que estouram a pilha de execução, isso é, funções chamadas tantas vezes que estouram o limite de tempo que deveriam ter sido resolvidas. Quando criamos um loop que irá chamar a função dentro da função, estamos criando uma pilha de execução que ficará armazenando na memória as variáveis locais. Essa abordagem pode exigir muita memória do programa, afetando o seu desempenho e otimização. Além disso, as funções recursivas podem demorar mais tempo para serem finalizadas do que as funções interativas com estruturas de repetição. 
