@@ -17,7 +17,9 @@ recursivas resolvem problemas que seriam mais complicados de solucionar com estr
 
 ## Exemplo básico de recursividade
 
-O cálculo de um número fatorial é um exemplo comum para estudar as funções recursivas. No exemplo abaixo, a função fatorial e chamada dentro dela mesmo até que o n (número fatorial) seja igual a 1, essa condição é chamada de caso base, enquanto a condição base não é satisfeita retorne a função fatorial de n vezes o (n-1). Em algum momento o n será igual a 1, pois estamos decrementando ele quando chamamos na função novamente e passamos (n-1). Então quando a condição for atendida teremos o resultado do fatorial.
+O cálculo de um número fatorial é um exemplo comum para estudar as funções recursivas. Um número fatorial é representado por um número seguido do ponto de exclamação `n!` para esse número ser calculado, vamos multiplicá-lo pelos seus antecessores até chegar em 1. Por exemplo: 5! = 5 x 4 x 3 x 2 x 1. O resultado é igual a 120. Note que para calcular um número fatorial vamos diminuindo ele e efetuando a multiplicação entre os números, isso lembra o conceito de recursividade. 
+
+Agora, vamos entender como escrever um algorítimo que calcule um número fatorial, utilizando as funções recursivas. No exemplo abaixo, a função fatorial é chamada dentro dela mesmo até que o n (número fatorial) seja igual a 1, essa condição é chamada de caso base. Enquanto a condição base não é satisfeita, retorne à função fatorial de n vezes o n-1. Em algum momento, o n será igual a 1, pois estamos decrementando ele quando chamamos na função novamente e passamos n-1. Então, quando a condição for atendida, teremos o resultado do fatorial.
 
     função fatorial(n)
     início 
